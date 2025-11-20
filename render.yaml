@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: braintree-api
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python auto_b3.py
